@@ -1,0 +1,2 @@
+[console_scripts]
+camel-terminal-mcp = camel_terminal_toolkit.server:main
