@@ -9,18 +9,21 @@ description = "CAMEL Terminal Toolkit as a standalone MCP server"
 authors = [
     {name = "CAMEL-AI.org", email = "noreply@camel-ai.org"}
 ]
-license = {text = "Apache-2.0"}
+license = "Apache-2.0"
 readme = "README.md"
 requires-python = ">=3.10"
+keywords = ["mcp", "terminal", "shell", "camel", "ai", "toolkit", "server"]
 classifiers = [
-    "Development Status :: 3 - Alpha",
+    "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
-    "License :: OSI Approved :: Apache Software License",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: System :: Shells",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
 ]
 
 dependencies = [
@@ -37,6 +40,8 @@ dev = [
     "black>=23.0.0",
     "ruff>=0.1.0",
     "mypy>=1.0.0",
+    "build>=1.0.0",
+    "twine>=5.0.0",
 ]
 
 [project.scripts]

@@ -3,19 +3,22 @@ Name: camel-terminal-toolkit
 Version: 0.1.0
 Summary: CAMEL Terminal Toolkit as a standalone MCP server
 Author-email: "CAMEL-AI.org" <noreply@camel-ai.org>
-License: Apache-2.0
+License-Expression: Apache-2.0
 Project-URL: Homepage, https://github.com/camel-ai/camel
 Project-URL: Repository, https://github.com/camel-ai/camel
 Project-URL: Documentation, https://docs.camel-ai.org
 Project-URL: Bug Tracker, https://github.com/camel-ai/camel/issues
-Classifier: Development Status :: 3 - Alpha
+Keywords: mcp,terminal,shell,camel,ai,toolkit,server
+Classifier: Development Status :: 4 - Beta
 Classifier: Intended Audience :: Developers
-Classifier: License :: OSI Approved :: Apache Software License
 Classifier: Operating System :: OS Independent
 Classifier: Programming Language :: Python :: 3
 Classifier: Programming Language :: Python :: 3.10
 Classifier: Programming Language :: Python :: 3.11
 Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Shells
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
 Requires-Python: >=3.10
 Description-Content-Type: text/markdown
 Requires-Dist: mcp>=1.0.0
@@ -28,6 +31,8 @@ Requires-Dist: pytest-asyncio>=0.21.0; extra == "dev"
 Requires-Dist: black>=23.0.0; extra == "dev"
 Requires-Dist: ruff>=0.1.0; extra == "dev"
 Requires-Dist: mypy>=1.0.0; extra == "dev"
+Requires-Dist: build>=1.0.0; extra == "dev"
+Requires-Dist: twine>=5.0.0; extra == "dev"
 
 # CAMEL Terminal Toolkit MCP Server
 
