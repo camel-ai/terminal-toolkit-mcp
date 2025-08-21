@@ -36,7 +36,7 @@ pip install -e .
 Start the server with stdio transport:
 
 ```bash
-camel-terminal-mcp
+terminal-toolkit-mcp
 ```
 
 ### Command Line Options
@@ -51,10 +51,10 @@ camel-terminal-mcp
 
 ```bash
 # Start with custom working directory and increased timeout
-camel-terminal-mcp --working-directory /tmp/workspace --timeout 60.0
+terminal-toolkit-mcp --working-directory /tmp/workspace --timeout 60.0
 
 # Start with safe mode disabled (not recommended)
-camel-terminal-mcp --no-safe-mode
+terminal-toolkit-mcp --no-safe-mode
 ```
 
 ## Available Tools

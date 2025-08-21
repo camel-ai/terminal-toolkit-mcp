@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "terminal-toolkit-mcp"
-version = "0.1.0"
+version = "0.1.1"
 description = "CAMEL Terminal Toolkit as a standalone MCP server"
 authors = [
     {name = "CAMEL-AI.org", email = "noreply@camel-ai.org"}
@@ -45,7 +45,7 @@ dev = [
 ]
 
 [project.scripts]
-camel-terminal-mcp = "camel_terminal_toolkit.server:main"
+terminal-toolkit-mcp = "camel_terminal_toolkit.server:main"
 
 [project.urls]
 Homepage = "https://github.com/camel-ai/terminal-toolkit-mcp"
