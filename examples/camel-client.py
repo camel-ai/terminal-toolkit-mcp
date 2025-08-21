@@ -31,7 +31,6 @@ Usage:
 """
 
 import asyncio
-from pathlib import Path
 
 from camel.agents import ChatAgent
 from camel.models import ModelFactory
@@ -55,8 +54,14 @@ async def mcp_client_example():
         print("Directory Contents:")
         print(call_tool_result.content[0].text)
 
-
-
+'''
+Available MCP tools: ['shell_exec', 'shell_view', 'shell_wait', 'shell_write_to_process', 'shell_kill_process', 'ask_user_for_help']
+Directory Contents:
+total 0
+drwxr-xr-x@  3 jinx0a  1840429327   96 Aug 21 15:16 .
+drwxr-xr-x@ 12 jinx0a  1840429327  384 Aug 21 15:00 ..
+drwxr-xr-x@  9 jinx0a  1840429327  288 Aug 21 15:16 .initial_env
+'''
 
 
 async def mcp_toolkit_example():
@@ -72,7 +77,7 @@ async def mcp_toolkit_example():
     }
 
     # Connect to all MCP servers.
-    async with MCPToolkit(config=config) as mcp_toolkit:
+    async with MCPToolkit(config_dict=config) as mcp_toolkit:
         sys_msg = "You are a helpful assistant"
         model = ModelFactory.create(
             model_platform=ModelPlatformType.DEFAULT,
@@ -83,13 +88,16 @@ async def mcp_toolkit_example():
             model=model,
             tools=[*mcp_toolkit.get_tools()],
         )
-        user_msg = "Use terminal-toolkit-mcp to list 5 files in the project, using relative paths"
+        user_msg = "Use terminal to find out what's the current date"
         response = await camel_agent.astep(user_msg)
         print(response.msgs[0].content)
         print(response.info['tool_calls'])
-
+'''
+The current date and time is Thu Aug 21 15:18:39 +03 2025.
+[ToolCallingRecord(tool_name='shell_exec', args={'id': 'session1', 'command': 'date'}, result='Thu Aug 21 15:18:39 +03 2025\n', tool_call_id='call_6pVGuMM1cA4b0BKkknIOLTMZ', images=None)]
+'''
 
 if __name__ == "__main__":
     asyncio.run(mcp_client_example())
-    # asyncio.run(mcp_toolkit_example())
+    asyncio.run(mcp_toolkit_example())
 

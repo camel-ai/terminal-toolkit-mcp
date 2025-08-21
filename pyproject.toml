@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "terminal-toolkit-mcp"
-version = "0.1.1"
+version = "0.1.2"
 description = "CAMEL Terminal Toolkit as a standalone MCP server"
 authors = [
     {name = "CAMEL-AI.org", email = "noreply@camel-ai.org"}
