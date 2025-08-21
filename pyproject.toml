@@ -48,10 +48,10 @@ dev = [
 camel-terminal-mcp = "camel_terminal_toolkit.server:main"
 
 [project.urls]
-Homepage = "https://github.com/camel-ai/camel"
-Repository = "https://github.com/camel-ai/camel"
+Homepage = "https://github.com/camel-ai/terminal-toolkit-mcp"
+Repository = "https://github.com/camel-ai/terminal-toolkit-mcp"
 Documentation = "https://docs.camel-ai.org"
-"Bug Tracker" = "https://github.com/camel-ai/camel/issues"
+"Bug Tracker" = "https://github.com/camel-ai/terminal-toolkit-mcp/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]
